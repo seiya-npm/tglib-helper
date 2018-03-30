@@ -3,7 +3,7 @@ Usage: `mkMethod(method,opts)`
 
 ## [parseTextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1parse_text_entities.html)
 Parses Bold, Italic, Code, Pre, PreCode and TextUrl entities contained in the text. This is an offline method. Can be called before authorization. Can be called synchronously.
-Returns object_ptr<FormattedText>.
+Returns object_ptr\<FormattedText\>.
 
 | Parameters | Type | Required | Description |
 | - | - | - | - |
