@@ -2,7 +2,7 @@
     "name": "tglib-helper",
     "version": "0.0.1",
     "description": "tglib helper",
-    "main": "tglib-helper.js",
+    "main": "src/tglib-helper.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
