@@ -18,7 +18,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | - | - | - | - |
 | chat_id | Integer | Yes | Unique identifier for the target chat. |
 | text | String | Yes | Text of the message to be sent. |
-| text_entities | Object | Optional | A JSON-serialized object for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
+| text_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
 
 ## [forwardMessage](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1forward_messages.html)
