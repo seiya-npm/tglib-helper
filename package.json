@@ -1,0 +1,24 @@
+{
+    "name": "tglib-helper",
+    "version": "0.0.1",
+    "description": "tglib helper",
+    "main": "tglib-helper.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "tglib",
+        "tdlib",
+        "telegram"
+    ],
+    "author": "Seiya Loveless",
+    "license": "MIT",
+    "homepage": "https://github.com/seiya-npm/tglib-helper#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/seiya-npm/tglib-helper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/seiya-npm/tglib-helper/issues"
+    }
+}
