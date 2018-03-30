@@ -1,6 +1,10 @@
 # mkMethod function
 Usage: `mkMethod(method,opts)`
 
+## [getMe](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1get_me.html)
+A simple method for testing your auth token. Requires no parameters. Returns information about the current user.
+Returns [Object"User"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1user.html).
+
 ## [parseTextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1parse_text_entities.html)
 Parses Bold, Italic, Code, Pre, PreCode and TextUrl entities contained in the text. This is an offline method. Can be called before authorization. Can be called synchronously.
 Returns [Object"FormattedText"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1formatted_text.html).

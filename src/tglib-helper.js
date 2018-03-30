@@ -20,6 +20,13 @@ const mkMethod = (method, opts) => {
         return data;
     }
     
+    if(method == 'getMe'){
+        data = {
+            "@type": "getMe"
+        }
+        return data;
+    }
+    
     if(method == 'sendMessage'){
         data = {
             "@type": "sendMessage",
@@ -54,6 +61,7 @@ const mkMethod = (method, opts) => {
         return data;
     }
     
+    return data;
     // -- end --
 }
 
