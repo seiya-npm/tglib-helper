@@ -15,7 +15,7 @@ Returns [Object"FormattedText"](https://core.telegram.org/tdlib/docs/classtd_1_1
 | parse_mode | String | Optional | Text parse mode. `Markdown` or `HTML`, `Markdown` by default. |
 
 ## [sendMessage](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
-Sends a text message. Returns the sent message.
+Sends a [text message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_text.html). Returns the sent message.
 Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1message.html).
 
 | Parameters | Type | Required | Description |
@@ -35,3 +35,15 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | from_chat_id | Integer | Yes | Identifier of the chat from which to forward message.  |
 | message_id | Integer | Yes | Identifier of the message to forward. |
 | disable_notification | Boolean | Optional | Pass true to disable notification for the message, doesn't work if messages are forwarded to a secret chat. |
+
+## [sendPhoto](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
+Sends a [photo message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_photo.html). Returns the sent message.
+Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1message.html).
+
+| Parameters | Type | Required | Description |
+| - | - | - | - |
+| chat_id | Integer | Yes | Unique identifier for the target chat. |
+| photo | String | Yes | Local path to the file.  |
+| caption | String | Optional | Photo caption; 0-200 characters. |
+| caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
+| reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |

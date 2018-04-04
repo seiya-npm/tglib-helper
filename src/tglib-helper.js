@@ -61,6 +61,33 @@ const mkMethod = (method, opts) => {
         return data;
     }
     
+    if(method == 'sendPhoto'){
+        data = {
+            "@type": "sendMessage",
+            "chat_id": opts.chat_id,
+            "input_message_content": {
+                "@type": "inputMessagePhoto",
+                "photo": {
+                    "@type": "inputFileLocal",
+                    "path": opts.path
+                }
+            }
+        };
+        if(opts.caption){
+            data.input_message_content.caption = {
+                "@type": "formattedText",
+                "text": opts.caption
+            };
+            if(opts.caption_entities){
+                data.input_message_content.caption.entities = opts.caption_entities;
+            }
+        }
+        if(opts.reply_to_message_id){
+            data.reply_to_message_id = opts.reply_to_message_id;
+        }
+        return data;
+    }
+    
     return data;
     // -- end --
 }
