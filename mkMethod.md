@@ -47,3 +47,15 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | caption | String | Optional | Photo caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+
+## [sendAudio](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
+Sends an [audio message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_audio.html). Returns the sent message.
+Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1message.html).
+
+| Parameters | Type | Required | Description |
+| - | - | - | - |
+| chat_id | Integer | Yes | Unique identifier for the target chat. |
+| audio | String | Yes | Local path to the file. |
+| caption | String | Optional | Photo caption; 0-200 characters. |
+| caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
+| reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |

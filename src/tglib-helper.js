@@ -69,7 +69,34 @@ const mkMethod = (method, opts) => {
                 "@type": "inputMessagePhoto",
                 "photo": {
                     "@type": "inputFileLocal",
-                    "path": opts.path
+                    "path": opts.photo
+                }
+            }
+        };
+        if(opts.caption){
+            data.input_message_content.caption = {
+                "@type": "formattedText",
+                "text": opts.caption
+            };
+            if(opts.caption_entities){
+                data.input_message_content.caption.entities = opts.caption_entities;
+            }
+        }
+        if(opts.reply_to_message_id){
+            data.reply_to_message_id = opts.reply_to_message_id;
+        }
+        return data;
+    }
+    
+    if(method == 'sendAudio'){
+        data = {
+            "@type": "sendMessage",
+            "chat_id": opts.chat_id,
+            "input_message_content": {
+                "@type": "inputMessageAudio",
+                "audio": {
+                    "@type": "inputFileLocal",
+                    "path": opts.audio
                 }
             }
         };
