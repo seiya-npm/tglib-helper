@@ -24,6 +24,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | text | String | Yes | Text of the message to be sent. |
 | text_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+| disable_notification | Boolean | Optional | Pass true to disable notification for the message. Not supported in secret chats. |
 
 ## [forwardMessage](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1forward_messages.html)
 Forwards previously sent message. Returns the forwarded message. If a message can't be forwarded, null will be returned instead of the message.
@@ -47,6 +48,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | caption | String | Optional | Photo caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+| disable_notification | Boolean | Optional | Pass true to disable notification for the message. Not supported in secret chats. |
 
 ## [sendAudio](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
 Sends an [audio message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_audio.html). Returns the sent message.
@@ -59,3 +61,43 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | caption | String | Optional | Photo caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+| disable_notification | Boolean | Optional | Pass true to disable notification for the message. Not supported in secret chats. |
+
+## [sendDocument](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
+Sends a [document message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_document.html). Returns the sent message.
+Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1message.html).
+
+| Parameters | Type | Required | Description |
+| - | - | - | - |
+| chat_id | Integer | Yes | Unique identifier for the target chat. |
+| document | String | Yes | Local path to the file. |
+| caption | String | Optional | Photo caption; 0-200 characters. |
+| caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
+| reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+| disable_notification | Boolean | Optional | Pass true to disable notification for the message. Not supported in secret chats. |
+
+## [sendVideo](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
+Sends a [video message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_video.html). Returns the sent message.
+Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1message.html).
+
+| Parameters | Type | Required | Description |
+| - | - | - | - |
+| chat_id | Integer | Yes | Unique identifier for the target chat. |
+| video | String | Yes | Local path to the file. |
+| caption | String | Optional | Photo caption; 0-200 characters. |
+| caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
+| reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+| disable_notification | Boolean | Optional | Pass true to disable notification for the message. Not supported in secret chats. |
+
+## [sendVoice](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1send_message.html)
+Sends a [voice note message](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1input_message_voice_note.html). Returns the sent message.
+Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1message.html).
+
+| Parameters | Type | Required | Description |
+| - | - | - | - |
+| chat_id | Integer | Yes | Unique identifier for the target chat. |
+| voice_note | String | Yes | Local path to the file. |
+| caption | String | Optional | Photo caption; 0-200 characters. |
+| caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
+| reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
+| disable_notification | Boolean | Optional | Pass true to disable notification for the message. Not supported in secret chats. |
