@@ -96,7 +96,7 @@ const mkMethod = (method, opts) => {
             data.input_message_content["@type"] = "inputMessageVoiceNote";
         }
         // media msg
-        if(type){
+        if(type && type != 'text'){
             data.input_message_content[type] = {
                 "@type": "inputFileLocal",
                 "path": opts[type]
