@@ -44,7 +44,8 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | Parameters | Type | Required | Description |
 | - | - | - | - |
 | chat_id | Integer | Yes | Unique identifier for the target chat. |
-| photo | String | Yes | Local path to the file.  |
+| photo | String | Yes | Local path to the file. |
+| is_remote | Boolean | No | Change input to remote file id. |
 | caption | String | Optional | Photo caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
@@ -58,6 +59,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | - | - | - | - |
 | chat_id | Integer | Yes | Unique identifier for the target chat. |
 | audio | String | Yes | Local path to the file. |
+| is_remote | Boolean | No | Change input to remote file id. |
 | caption | String | Optional | Audio caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
@@ -71,6 +73,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | - | - | - | - |
 | chat_id | Integer | Yes | Unique identifier for the target chat. |
 | document | String | Yes | Local path to the file. |
+| is_remote | Boolean | No | Change input to remote file id. |
 | caption | String | Optional | Document caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
@@ -84,6 +87,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | - | - | - | - |
 | chat_id | Integer | Yes | Unique identifier for the target chat. |
 | video | String | Yes | Local path to the file. |
+| is_remote | Boolean | No | Change input to remote file id. |
 | caption | String | Optional | Video caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
@@ -97,6 +101,7 @@ Returns [Object"Message"](https://core.telegram.org/tdlib/docs/classtd_1_1td__ap
 | - | - | - | - |
 | chat_id | Integer | Yes | Unique identifier for the target chat. |
 | voice_note | String | Yes | Local path to the file. |
+| is_remote | Boolean | No | Change input to remote file id. |
 | caption | String | Optional | Voice note caption; 0-200 characters. |
 | caption_entities | Array | Optional | A JSON-serialized array for an [TextEntities](https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1text_entity.html). |
 | reply_to_message_id | Integer | Optional | Identifier of the message to reply to or 0. |
