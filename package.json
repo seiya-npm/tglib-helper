@@ -1,6 +1,6 @@
 {
     "name": "tglib-helper",
-    "version": "0.1.2",
+    "version": "0.1.4",
     "description": "tglib helper.",
     "main": "src/tglib-helper.js",
     "scripts": {

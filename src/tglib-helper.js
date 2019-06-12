@@ -97,19 +97,10 @@ const mkMethod = (method, opts) => {
         }
         // media msg
         if(type && type != 'text'){
-            data.input_message_content[type] = {};
-            if(opts.is_remote){
-                data.input_message_content[type] = {
-                    "@type": "inputFileRemote",
-                    "id": opts[type]
-                };
-            }
-            else{
-                data.input_message_content[type] = {
-                    "@type": "inputFileLocal",
-                    "path": opts[type]
-                };
-            }
+            data.input_message_content[type] = {
+                "@type": (opts.is_remote ? "inputFileRemote" : "inputFileLocal")
+            };
+            data.input_message_content[type][opts.is_remote ? "id" : "path"] = opts[type];
             // type specific options
             if(type == 'video' && opts.supports_streaming){
                  data.input_message_content[type].supports_streaming = opts.supports_streaming;
